@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html><title>t-y</title><head>
+<script src="sha256.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/js-sha256/0.9.0/sha256.min.js"></script>
+</head><body><center><h1>a..d=095c..0377<br>d..d=4040..6a1b<br>
+<input placeholder="enter text" size="80" type="text" id="inputText" oninput="calculateSHA256()"><br>
+<input size="80" type="text" id="sha256Output" disabled>
+<script>
+function calculateSHA256() {
+const inputText = document.getElementById('inputText').value;
+const sha256Hash = sha256(inputText);
+document.getElementById('sha256Output').value = sha256Hash;
+}
+</script>
+</h1></center></body></html>
